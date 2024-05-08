@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title> Thực hành</title>
+    <style>
+    .wufoo {
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+    </style>
+</head>
+<body>
+<form method="get" action="ngu.html">
+    <h1>Order Form</h1>
+    <p>What would you like to buy?</p>
+    <select>
+        <option value=" ">A</option>
+        <option >B( +0.5$)</option>
+        <option>C( +0.5$)</option>
+    </select>
+    <p> How many would you like to order?</p>
+    <label> <input name="td" type="radio"/>1-$10</label><br>
+    <label> <input name="td" type="radio"/>2-$20</label><br>
+    <label> <input name="td" type="radio"/>3-$30</label><br>
+    <p>Name<span style="color: red">*</span></p>
+    <input name="FistName" value="FirstName" type="text"/><br><br>
+    <input name="LastName" Value="LastName" type="text"/>
+    <p>Email</p>
+    <input name="tr" type="text" size="20"/>
+    <p>Phone Number</p>
+    <input name="th" type="text" size="5"/>-
+    <input name="th" type="text" size="5"/>-
+    <input name="th" type="text" size="5"/>
+    <br><br>
+    <input name="submit" value="Submit" type="button"/>
+</form>
+</body>
+</html>
