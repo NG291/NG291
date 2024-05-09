@@ -1,19 +1,62 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title> Đăng kí học viên </title>
+    <style>
+        body{ margin:0;}
+        .container{
+            background: #dd4813;
+            width: 600px;
+            height: 400px;
+            padding-left: 100px;
+            margin-left: 100px;
+        }
+        td{
+            padding-bottom: 20px;
+        }
+
+    </style>
 </head>
 <body>
-   <div>
+<div class="container">
+   <table>
        <h1> Đăng ký học viên </h1>
-       <span class="custom-span"> Họ và tên </span><input name="usename" type="text" />
-       <span class="custom-span"> Ngày sinh </span><input name="date" type="text"/>
-       <span class="custom-span"> Giới tính  </span><input name="gender"type="radio" Nam <input/ >
-       <span class="custom-span"> Địa chỉ  </span>
-       <span class="custom-span"> Lớp </span>
-       <span class="custom-span"> Email </span>
-       <span class="custom-span"> Điện thoại </span>
-   </div>
+      <tr>
+          <td>Họ và Tên</td>
+          <td><input name="username" type="text"/></td>
+      </tr>
+      <tr>
+          <td>Ngày Sinh</td>
+          <td><input name="Date" type="text"/></td>
+      </tr>
+      <tr>
+       <td>Giới tính</td>
+       <td><input name="gender" type="radio"/> Nam<input name="gender" type="radio"/> Nữ</td>
+      </tr>
+      <tr>
+       <td>Địa chỉ</td>
+          <td> <textarea name="addess" type="text" cols="20" rows="3" ></textarea></td>
+      </tr>
+      <tr>
+       <td>Lớp </td>
+       <td>
+           <select>
+               <option>Chọn Lớp</option>
+               <option>Lớp B</option>
+               <option>Lớp C</option>
+           </select>
+       </td>
+      </tr>
+     <tr>
+       <td>Email</td>
+       <td> <input name="mail" type="email"/></td>
+     </tr>
+     <tr>
+       <td> Điện thoại</td>
+       <td> <input name="Phone" type="number"/></td>
+     </tr>
+   </table>
+</div>
 </body>
 </html>
